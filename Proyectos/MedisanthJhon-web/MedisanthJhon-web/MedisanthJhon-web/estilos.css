@@ -1,0 +1,275 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+*{
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+nav, div, img, nav ul, nav li{
+    display: inline-block; 
+}
+
+#logo img{
+    margin-left: 100px;
+    margin-right: 20;
+    width: 6%;
+    height: 21%;
+    /* display: inline-block; */
+    float: left;
+}
+
+#logo h1{
+    font-size: 2.5em;
+    padding:0;
+    float: left;
+    top: 1px;
+    margin: 0;
+}
+
+#logo{
+    width: 40%;
+}
+
+#logo, #menu{
+    float: left;
+}
+
+#menu {
+    text-align: right; 
+    width: 50%;
+}
+#menu  a{
+    text-decoration:none;
+    display:inline;
+    padding:5px;
+    color:black;
+    background-color: rgba(200,200,200,0.2);
+}
+
+#menu a:hover{
+    color:white;
+    background-color: rgba(100,100,100,0.8);
+}
+
+
+nav{
+    width: 100%;
+    height: 11%;
+    background-color:#5ECDC3;
+    color: white;
+     
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    text-align: center;
+    padding: 30px 1;
+}
+
+nav ul{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav > ul:hover{
+    text-decoration: wavy;
+}
+
+
+#principal{
+    padding-top: 100px;
+}
+
+#aboutus h2{
+    font-size: 20pt;
+}
+
+article{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+article, section, div, h3, img{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 6px;
+}
+
+article, div, img{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#Aboutus a{
+    text-decoration:none;
+    display:inline-block;
+    padding:15px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(200,200,200,0.2);
+    border-radius:10px;
+    background-color:#5ECDC3
+    
+}
+
+#Aboutus a:hover{
+    color:black;
+    background-color:white;
+}
+/* article #aboutus{
+    box-shadow: 0px 0px 15px #ccc;
+    border-radius:10px;
+    width: 50%;
+    height: 30%;
+}  */
+
+#news{
+    float: left;
+    width: 62%;
+    height: 40%;
+    border-radius:10px;
+    box-shadow: black;
+}
+#most{
+    float: right;
+    width: 28%;
+    height: 40%;
+    box-sizing: 20%;
+    border: none;
+    border-radius:10px;
+    box-shadow: black;
+} 
+
+
+#about div{
+  float:left;
+}
+#about1{
+  width:50%;
+}
+#aboutimg{
+  width:40%;
+}
+
+
+
+
+
+
+/* slider automatico */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 50px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

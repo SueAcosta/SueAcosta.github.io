@@ -1,0 +1,95 @@
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .experience-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #007bff;
+  }
+  
+  .experience-item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #007bff;
+    border: 2px solid #fff;
+  }
+  
+  .experience-content {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .experience-content h3 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .date {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .experience-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .experience-content li {
+    margin-bottom: 5px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .skill-tag {
+    background: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+  }
+  
+  @media (max-width: 600px) {
+    .timeline {
+      padding-left: 20px;
+    }
+    
+    .experience-item::before {
+      left: -26px;
+    }
+  }

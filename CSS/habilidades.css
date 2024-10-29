@@ -1,0 +1,101 @@
+.skills-certificates-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  
+  .chat-bubble {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(50% - 20px);
+    height: fit-content;
+  }
+  
+  .chat-bubble h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .chat-bubble ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .chat-bubble li {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .skills.soft {
+    background-color: #5a7b5e;
+  }
+  
+  .skills.hard {
+    background-color: #827ada;
+  }
+  .entorno{
+    background-color: #e5ce7a;
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .certificate {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .certificate:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certificate img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .certificate h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .certificate p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .chat-bubble {
+      width: 90%;
+      padding: 5px;
+      margin-left: 20px;
+    }
+    .skills-certificates-container{
+      margin-top: 250px;
+      display: grid;
+      width: 100%;
+    }
+    
+  }
